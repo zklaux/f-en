@@ -32,7 +32,51 @@ svg * {
     border-radius: 15px;
 }
 
+#showDetails {
+    opacity: 0;
+    width: 20%;
+    transition: .6s;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+}
+
+.showDetails h2 {
+    margin-bottom: 0;
+    padding: .3em;
+    background-color: gray;
+    border-radius: 5px 5px 0 0;
+    color: aliceblue;
+}
+
+.items {
+    margin-top: 0;
+    padding: .7em;
+    padding-bottom: .3em;
+    background-color: goldenrod;
+    min-height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0 0 5px 5px;
+    transition: .01s;
+}
+
+.close {
+    font-size: .7em;
+    text-align: right;
+    cursor: pointer;
+}
+
 @media (max-width: 720px) {
+
+    #showDetails {
+        position: fixed;
+        top: 0;
+        left: 5%;
+        width: 0;
+        white-space: nowrap;
+    }
 
     svg {
         position: absolute;

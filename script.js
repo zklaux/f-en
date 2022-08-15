@@ -1,23 +1,46 @@
 // For responsiveness
-var myMedia = window.matchMedia("(min-width: 720px)");
+var myMedia = window.matchMedia("(max-width: 720px)");
 
-if (myMedia.matches) {
-  
+units = {
+  "canada": ["SPE Alpha", "SPE Beta", "SPE Gamma", "SPE Hulk"],
+  "uruguai": ["SPE Gamma", "SPE Hulk", "SPE Sigma"],
+  "korea": ["SPE Beta", "SPE Gamma", "SPE Magna"]
+}
 
-function hoverdiv(e, divid) {
-  var left = e.clientX + "px";
-  var top = e.clientY + "px";
 
+function printUnits(id) {
+  var div = document.getElementById("units-blt");
+  units[id].forEach(unit => {
+    div.innerHTML = div.innerHTML + "<p class='item'>" + unit + "</p>";
+  })
+  div.innerHTML = div.innerHTML + "<p class='close' onclick='closeConsole()'>Fechar</p>"
+}
+
+function mapClick(divid) {
   var div = document.getElementById(divid);
 
-  div.style.left = left;
-  div.style.top = top;
+  var name = document.getElementById('country-name');
+  name.textContent = div.getAttribute('name');
 
-  $("#" + divid).toggle();
+  var x = document.getElementById('showDetails');
+  x.style.opacity = 1;
+
+  if (myMedia.matches) {
+    x.style.width = "80vw";
+  }
+
+  document.getElementById("units-blt").innerHTML = "";
+
+  printUnits(divid, div)
 }
-} else {
-  function hoverdiv(e, divid) {
-    console.log(divid + " not to be disturbed in this media format and in the event of " + e);
+
+function closeConsole() {
+  var x = document.getElementById('showDetails');
+  x.style.opacity = 0;
+  
+  if (myMedia.matches) {
+    x.style.width = 0;
   }
 }
+
 
