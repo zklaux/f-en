@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    align-items: flex-start;
+    gap: 7em;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+path {
+    fill: #343a40;
+    stroke: aliceblue;
+}
+
+svg * {
+    width: 100vw;
+    height: 100vh;
+}
+
+.customer {
+    fill: goldenrod;
+    cursor: pointer;
+}
+
+.ttp {
+    position: fixed;
+    display:none;
+    padding: .4em 1em;
+    background: #343a40;
+    color: #FFF;
+    border-radius: 15px;
+}
+
+@media (max-width: 720px) {
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100vh;
+        transform: scale(1);
+    }
+
+    svg * {
+        width: 30vw;
+        height: 30vh;
+    }
+}
