@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts Energia</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<header>
+    <div class="bkg-interno">
+        <div class="header">
+            <div class="row">
+                <div class="header-left">
+                    <a href="#">
+                        <h1 class="title">Facts Energia</h1>
+                    </a>
+                </div>
+
+                <div class="header-right">
+                    <nav class="navbar navbar-expand" id="main_navbar">
+                        <ul class="navbar-nav mr-auto" id="menu-principal">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">A Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./onde_atuamos.html">Onde Atuamos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./knowhow.html">Know How</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./obras.html">Obras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pe-0" href="./contactus.html">Fale Conosco</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <div class="contato-titulo">
+        <div class="titulo">
+            <h1>Fale Conosco</h1>
+        </div>
+    </div>
+
+    <section class="contato">
+
+        <div class="row">
+
+            <aside class="aside-left">
+
+                <section class="endereco">
+
+                    <h3>Facts Energia</h3>
+                    <p>
+                        Rua União, 452<br>
+                        Parque União -
+                        13206-650<br>
+                        Jundiaí - SP<br>
+                    </p>
+
+                    <div class="telefone">
+                        <p>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>+55 11 </span>98207-9414
+                        </p>
+
+                        <p>
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <span>+55 11 </span>98106-0984
+                        </p>
+                    </div>
+
+                </section>
+
+            </aside>
+
+            <div wire:id="ZuDZ9SFM6VwYAuksEDIq" class="form-contato">
+
+                <div>
+                </div>
+
+                <form ref="form" id="form-contato" role="form" onsubmit="return false">
+
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <input id="nome" wire:model="nome" name="nome" type="text" placeholder="Digite um nome"
+                            class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input id="email" name="email" wire:model="email" type="text" placeholder="Digite um email"
+                            class="form-control">
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="row">
+                            <div class="input-telefone">
+                                <label for="fone">Telefone:</label>
+                                <input id="fone" name="inputFone" type="text" wire:model.debounce.300ms="fone"
+                                    placeholder="Somente Números com DDD Ex: 6512345678" class="form-control">
+                            </div>
+                            <div class="input-telefone">
+                                <label for="celular">Celular:</label>
+                                <input id="celular" name="celular" type="text" wire:model.debounce.300ms="celular"
+                                    placeholder="Somente Números com DDD Ex: 6512345678" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="row">
+                            <div class="input-cidade">
+                                <label for="cidade">Cidade:</label>
+                                <input id="cidade" name="cidade" type="text" placeholder="Selecione um Setor..."
+                                    wire:model="cidade" class="form-control">
+                            </div>
+                            <div class="input-estado">
+                                <label for="estado">Estado:</label>
+                                <input id="estado" name="estado" type="text" placeholder="Selecione um Setor..."
+                                    wire:model="estado" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <input id="assunto" name="assunto" type="text" wire:model="assunto"
+                            placeholder="Selecione um Setor..." class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" wire:model="mensagem" class="form-control"
+                            rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group mt-5 text-center">
+                        <button type="button" class="btn btn-secundario" wire:click="sendmail">
+                            <i class="bi bi-check me-2"></i>
+                            Enviar Mensagem
+                            <div wire:loading="" wire:target="sendmail">
+                                <span class="spinner-border spinner-border-sm ms-2"></span>
+                            </div>
+                        </button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+</main>

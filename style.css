@@ -2,6 +2,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,200;1,700&display=swap);
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+
+/* Meus estilos */
+
+.banner-flexslider-fluid ul {
+    list-style: none;
+    ;
+}
+
+/* Fim dos meus estilos */
+
+
 html {
     -webkit-text-size-adjust: 100%;
     line-height: 1.15
@@ -17161,22 +17173,6 @@ header .navbar>.header {
     .d-print-none {
         display: none !important
     }
-}
-
-::-webkit-scrollbar {
-    width: 6px !important
-}
-
-::-webkit-scrollbar-track {
-    background-color: #f2ca30 !important
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #000c23 !important
-}
-
-::-webkit-scrollbar-thumb:window-inactive {
-    opacity: .1 !important
 }
 
 body,
