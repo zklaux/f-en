@@ -6,22 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facts Energia - Obras</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
 </head>
 
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-    <div id="geral">
+<body>
+    <header>
+        <div class="bkg-header-info">
+            <div class="header-info">
+                <ul class="languages">
+                    <li><a role="button" class="active"><span class="fi fi-br"></span></a><span>|</span></li>
+                    <li><a href="home_en.html" role="button"><span class="fi fi-us"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <div class="row">
 
-        <header>
-            <div class="bkg-interno">
-                <div class="header">
-                    <div class="row">
-
-                        <div class="header-left">
-                            <a href="#">
-                                <h1 class="title">Facts Energia</h1>
-                            </a>
-                        </div>
+                <div class="header-left">
+                    <a href="#">
+                        <img id="logo" src="./img/Facts Energia Brainstorm.png" alt="Facts Energia">
+                    </a>
+                </div>
 
                         <div class="header-right">
                             <nav class="navbar navbar-expand" id="main_navbar">
@@ -38,7 +46,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="./knowhow.html">Know How</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item active">
                                         <a class="nav-link" href="./obras.html">Obras</a>
                                     </li>
                                     <li class="nav-item">
@@ -68,6 +76,71 @@
 
 
         </main>
-
-
-</html>
+        
+        <footer>
+            <section class="footer">
+                <div class="row">                
+                    <div class="footer-logo">
+                        <img id="logo" src="./img/facts_footer.png" alt="Facts Energia">
+                        <a href="" id="back-to-top" onclick="topFunction()">Voltar ao topo</a>
+                    </div>
+    
+                    <div class="footer-address">
+    
+                        <h2>Atendimento</h2>
+    
+    
+                        <div class="footer-telefone mb-3">
+                            <div class="icon-footer">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+                            <div class="texto">
+                                <span class="prefixo">+55 69</span> 99928-8756<br>
+                            </div>
+                        </div>
+    
+                        <div class="footer-email mb-3">
+                            <div class="icon-footer">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="texto">
+                                comercial@factsenergia.eng.br
+                            </div>
+                        </div>
+    
+                        <address>
+                            <div class="icon-footer">
+                                <ion-icon name="map-outline"></ion-icon>
+                            </div>
+                            <div class="texto">
+                                <p>
+                                    Rua Bom Jesus, 212<br>
+                                    Sala 1904<br>
+                                    80035-010<br>
+                                    Juvevê - Curitiba/PR<br>
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="copyright">
+                <p>Copyright © 2022 Facts Energia - Todos os direitos reservados</p>
+            </section>
+        </footer>
+    </body>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <script>
+    
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    
+    </script>

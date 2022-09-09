@@ -6,16 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facts Energia</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
 </head>
 
-<header>
-    <div class="bkg-interno">
+<body>
+    <header>
+        <div class="bkg-header-info">
+            <div class="header-info">
+                <ul class="languages">
+                    <li><a role="button" class="active"><span class="fi fi-br"></span></a><span>|</span></li>
+                    <li><a href="home_en.html" role="button"><span class="fi fi-us"></span></a></li>
+                </ul>
+            </div>
+        </div>
         <div class="header">
             <div class="row">
+
                 <div class="header-left">
                     <a href="#">
-                        <h1 class="title">Facts Energia</h1>
+                        <img id="logo" src="./img/Facts Energia Brainstorm.png" alt="Facts Energia">
                     </a>
                 </div>
 
@@ -28,7 +40,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./about.html">A Empresa</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="./onde_atuamos.html">Onde Atuamos</a>
                             </li>
                             <li class="nav-item">
@@ -47,12 +59,12 @@
             </div>
 
         </div>
-    </div>
-</header>
+        </div>
+    </header>
 
-<main>
-        
-            <div class="atuacao-titulo">
+    <main>
+
+        <div class="atuacao-titulo">
             <div class="titulo">
                 <h1>Onde Atuamos</h1>
             </div>
@@ -61,14 +73,90 @@
         <section class="atuacao">
             <div class="row">
                 <div class="img aos-init aos-animate" data-aos="flip-left">
-                    <a href="" data-lightbox="images" data-title="Onde Atuamos">
-                        <img src="" alt="Onde Atuamos" class="img-thumbnail">
-                    </a>
+
+                    <img src="./img/where.jpg" alt="Onde Atuamos" class="img-thumbnail">
+
                 </div>
                 <div class="descricao">
-                    <p>As atividades da empresa se concentram em prestação de serviços no setor de energia elétrica, tanto na geração como transmissão e distribuição. A empresa dispõe de uma equipe especializada em sistemas de Proteção, Controle e Supervisão de Subestações de Energia em todos os níveis de tensão, para atividades como:</p><p>- Estudos de Coordenação e Seletividade;</p><p>- Análise de Projetos;</p><p>- Parametrização de IEDs de Proteção e Controle;</p><p>- Testes de Aceitação em Fábrica e Campo (TAF e TAC);</p><p>- Prestação de serviços de Treinamentos e desenvolvimento profissional;</p><p>- Gerenciamento de obras.</p>
+                    <p>As atividades da empresa se concentram em prestação de serviços no setor de energia elétrica,
+                        tanto na geração como transmissão e distribuição. A empresa dispõe de uma equipe especializada
+                        em sistemas de Proteção, Controle e Supervisão de Subestações de Energia em todos os níveis de
+                        tensão, para atividades como:</p>
+                    <p>- Estudos de Coordenação e Seletividade;</p>
+                    <p>- Análise de Projetos;</p>
+                    <p>- Parametrização de IEDs de Proteção e Controle;</p>
+                    <p>- Testes de Aceitação em Fábrica e Campo (TAF e TAC);</p>
+                    <p>- Prestação de serviços de Treinamentos e desenvolvimento profissional;</p>
+                    <p>- Gerenciamento de obras.</p>
                 </div>
             </div>
         </section>
-    
     </main>
+
+    <footer>
+        <section class="footer">
+            <div class="row">                
+                <div class="footer-logo">
+                    <img id="logo" src="./img/facts_footer.png" alt="Facts Energia">
+                    <a href="" id="back-to-top" onclick="topFunction()">Voltar ao topo</a>
+                </div>
+
+                <div class="footer-address">
+
+                    <h2>Atendimento</h2>
+
+
+                    <div class="footer-telefone mb-3">
+                        <div class="icon-footer">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="texto">
+                            <span class="prefixo">+55 69</span> 99928-8756<br>
+                        </div>
+                    </div>
+
+                    <div class="footer-email mb-3">
+                        <div class="icon-footer">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="texto">
+                            comercial@factsenergia.eng.br
+                        </div>
+                    </div>
+
+                    <address>
+                        <div class="icon-footer">
+                            <ion-icon name="map-outline"></ion-icon>
+                        </div>
+                        <div class="texto">
+                            <p>
+                                Rua Bom Jesus, 212<br>
+                                Sala 1904<br>
+                                80035-010<br>
+                                Juvevê - Curitiba/PR<br>
+                            </p>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright">
+            <p>Copyright © 2022 Facts Energia - Todos os direitos reservados</p>
+        </section>
+    </footer>
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
