@@ -24,15 +24,51 @@
             </div>
         </div>
         <div class="header">
-            <div class="row">
+
+            <div class="row mobile-menu">
 
                 <div class="header-left">
+
+                    <!-- Mobile Menu -->
+                    <input type="checkbox" id="hamburger-input" class="burguer-shower" />
+                    
+
+                    <label id="hamburger-menu" for="hamburger-input">
+                        <nav class="navbar navbar-expand" id="sidebar-menu">
+                            <ul class="navbar-nav mr-auto" id="menu-principal">
+                                <ul class="languages-mobile">
+                                    <li><a role="button" class="active"><span class="fi fi-br"></span></a></li>
+                                    <li><a href="home_en.html" role="button"><span class="fi fi-us"></span></a></li>
+                                </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">A Empresa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./onde_atuamos.html">Onde Atuamos</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./knowhow.html">Know How</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./obras.html">Obras</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pe-0" href="./contactus.html">Fale Conosco</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </label>
+                    <label for="hamburger-input" class="overlay" id="overlay"></label>
                     <a href="#">
                         <img id="logo" src="./img/Facts Energia Brainstorm.png" alt="Facts Energia">
                     </a>
                 </div>
 
                 <div class="header-right">
+                    <!-- Desktop Menu -->
                     <nav class="navbar navbar-expand" id="main_navbar">
                         <ul class="navbar-nav mr-auto" id="menu-principal">
                             <li class="nav-item">
@@ -54,12 +90,9 @@
                                 <a class="nav-link pe-0" href="./contactus.html">Fale Conosco</a>
                             </li>
                         </ul>
-
                     </nav>
                 </div>
             </div>
-
-        </div>
         </div>
     </header>
 
@@ -72,7 +105,7 @@
         </div>
 
         <section class="atuacao">
-            <div class="row">
+            <div class="row full-page">
                 <div class="img aos-init aos-animate" data-aos="flip-left">
                         <img src="./img/knowhow.jpg" alt="Know how" class="img-thumbnail">
                 </div>

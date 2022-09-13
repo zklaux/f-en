@@ -24,22 +24,22 @@
             </div>
         </div>
         <div class="header">
-            <div class="row">
+
+            <div class="row mobile-menu">
 
                 <div class="header-left">
-                    <a href="#">
-                        <img id="logo" src="./img/Facts Energia Brainstorm.png" alt="Facts Energia">
-                    </a>
-                </div>
-
-                <div class="header-right">
 
                     <!-- Mobile Menu -->
-                    <!-- <input type="checkbox" id="hamburger-input" class="burguer-shower" />
+                    <input type="checkbox" id="hamburger-input" class="burguer-shower" />
+                    
 
                     <label id="hamburger-menu" for="hamburger-input">
                         <nav class="navbar navbar-expand" id="sidebar-menu">
                             <ul class="navbar-nav mr-auto" id="menu-principal">
+                                <ul class="languages-mobile">
+                                    <li><a role="button" class="active"><span class="fi fi-br"></span></a></li>
+                                    <li><a href="home_en.html" role="button"><span class="fi fi-us"></span></a></li>
+                                </ul>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="./index.html">Home</a>
                                 </li>
@@ -61,9 +61,13 @@
                             </ul>
                         </nav>
                     </label>
-                </div> -->
+                    <label for="hamburger-input" class="overlay" id="overlay"></label>
+                    <a href="#">
+                        <img id="logo" src="./img/Facts Energia Brainstorm.png" alt="Facts Energia">
+                    </a>
+                </div>
 
-
+                <div class="header-right">
                     <!-- Desktop Menu -->
                     <nav class="navbar navbar-expand" id="main_navbar">
                         <ul class="navbar-nav mr-auto" id="menu-principal">
@@ -87,10 +91,8 @@
                             </li>
                         </ul>
                     </nav>
-
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -170,23 +172,22 @@
             </div>
         </section>
 
-        <section class="solucoes" style="background-color: #EDAB47; background-position: 0 0;">
+        <section class="solucoes"
+            style="background-color: #EDAB47; background-image: url(./img/solution.png); background-position: 0 0; background-repeat: no-repeat;">
             <div class="solucao">
                 <div class="texto">
-                    <div class="pe-5">
-                        <h2>Soluções práticas e completas de engenharia.</h2>
-                        <p>A empresa dispõe de uma equipe especializada em Gerenciamento, Coordenação, sistemas elétrico
-                            e sistemas de Proteção, Controle e Supervisão de Subestações de Energia em todos os níveis
-                            de tensão para atividades como:</p>
-                        <p>- Estudos de Coordenação e Seletividade;</p>
-                        <p>- Gerenciamento e coordenação de obras;</p>
-                        <p>- Gerenciamento e coordenação de projetos;</p>
-                        <p>- Análise de Projetos;</p>
-                        <p>- Parametrização de IEDs de Proteção e Controle;</p>
-                        <p>- Testes de Aceitação em Fábrica e Campo (TAF e TAC);</p>
-                        <p>- Treinamentos e desenvolvimento profissional;</p>
-                        <p>- Execução de serviços de campo.</p>
-                    </div>
+                    <h2>Soluções práticas e completas de engenharia.</h2>
+                    <p>A empresa dispõe de uma equipe especializada em Gerenciamento, Coordenação, sistemas elétrico
+                        e sistemas de Proteção, Controle e Supervisão de Subestações de Energia em todos os níveis
+                        de tensão para atividades como:</p>
+                    <p>- Estudos de Coordenação e Seletividade;</p>
+                    <p>- Gerenciamento e coordenação de obras;</p>
+                    <p>- Gerenciamento e coordenação de projetos;</p>
+                    <p>- Análise de Projetos;</p>
+                    <p>- Parametrização de IEDs de Proteção e Controle;</p>
+                    <p>- Testes de Aceitação em Fábrica e Campo (TAF e TAC);</p>
+                    <p>- Treinamentos e desenvolvimento profissional;</p>
+                    <p>- Execução de serviços de campo.</p>
                 </div>
             </div>
         </section>
@@ -241,7 +242,7 @@
 
     <footer>
         <section class="footer">
-            <div class="row">                
+            <div class="row">
                 <div class="footer-logo">
                     <img id="logo" src="./img/facts_footer.png" alt="Facts Energia">
                     <a href="" id="back-to-top" onclick="topFunction()">Voltar ao topo</a>

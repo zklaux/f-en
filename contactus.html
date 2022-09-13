@@ -11,6 +11,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,15 +25,51 @@
             </div>
         </div>
         <div class="header">
-            <div class="row">
+
+            <div class="row mobile-menu">
 
                 <div class="header-left">
+
+                    <!-- Mobile Menu -->
+                    <input type="checkbox" id="hamburger-input" class="burguer-shower" />
+
+
+                    <label id="hamburger-menu" for="hamburger-input">
+                        <nav class="navbar navbar-expand" id="sidebar-menu">
+                            <ul class="navbar-nav mr-auto" id="menu-principal">
+                                <ul class="languages-mobile">
+                                    <li><a role="button" class="active"><span class="fi fi-br"></span></a></li>
+                                    <li><a href="home_en.html" role="button"><span class="fi fi-us"></span></a></li>
+                                </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">A Empresa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./onde_atuamos.html">Onde Atuamos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./knowhow.html">Know How</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./obras.html">Obras</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link pe-0" href="./contactus.html">Fale Conosco</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </label>
+                    <label for="hamburger-input" class="overlay" id="overlay"></label>
                     <a href="#">
                         <img id="logo" src="./img/Facts Energia Brainstorm.png" alt="Facts Energia">
                     </a>
                 </div>
 
                 <div class="header-right">
+                    <!-- Desktop Menu -->
                     <nav class="navbar navbar-expand" id="main_navbar">
                         <ul class="navbar-nav mr-auto" id="menu-principal">
                             <li class="nav-item">
@@ -54,182 +91,190 @@
                                 <a class="nav-link pe-0" href="./contactus.html">Fale Conosco</a>
                             </li>
                         </ul>
-
                     </nav>
                 </div>
             </div>
-
         </div>
-    </div>
-</header>
+    </header>
 
-<main>
+    <main>
 
-    <div class="contato-titulo">
-        <div class="titulo">
-            <h1>Fale Conosco</h1>
-        </div>
-    </div>
-
-    <section class="contato">
-
-        <div class="row">
-
-            <aside class="aside-left">
-
-                <section class="endereco">
-
-                    <h3>Facts Energia</h3>
-                    <p>
-                        Rua Bom Jesus, 212<br>
-                        Sala 1904<br>
-                        80035-010<br>
-                        Juvevê - Curitiba/PR<br>
-                    </p>
-
-                    <div class="telefone">
-                        <p>
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <span>+55 69 </span>99928-8756
-                        </p>
-                    </div>
-
-                </section>
-
-            </aside>
-
-            <div class="form-contato">
-
-                <div>
-                </div>
-
-                <form ref="form" id="form-contato" role="form" onsubmit="return false">
-
-                    <div class="form-group">
-                        <label>Nome:</label>
-                        <input id="nome" name="nome" type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">e-mail:</label>
-                        <input id="email" name="email" type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group clearfix">
-                        <div class="row">
-                            <div class="input-telefone">
-                                <label for="fone">Telefone:</label>
-                                <input id="fone" name="inputFone" type="text" placeholder="Apenas números com DDD" class="form-control">
-                            </div>
-                            <div class="input-telefone">
-                                <label for="celular">Celular:</label>
-                                <input id="celular" name="celular" type="text" placeholder="Apenas números com DDD" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group clearfix">
-                        <div class="row">
-                            <div class="input-cidade">
-                                <label for="cidade">Cidade:</label>
-                                <input id="cidade" name="cidade" type="text" class="form-control">
-                            </div>
-                            <div class="input-estado">
-                                <label for="estado">Estado:</label>
-                                <input id="estado" name="estado" type="text" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="assunto">Assunto:</label>
-                        <input id="assunto" name="assunto" type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label" for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" class="form-control" rows="5"></textarea>
-                    </div>
-
-                    <div class="form-group text-center">
-                        <button type="button" class="btn btn-secundario" >
-                            Enviar Mensagem
-                        </button>
-                    </div>
-
-
-                </form>
-
+        <div class="contato-titulo">
+            <div class="titulo">
+                <h1>Fale Conosco</h1>
             </div>
-
         </div>
-    </section>
-</main>
 
-<footer>
-    <section class="footer">
-        <div class="row">                
-            <div class="footer-logo">
-                <img id="logo" src="./img/facts_footer.png" alt="Facts Energia">
-                <a href="" id="back-to-top" onclick="topFunction()">Voltar ao topo</a>
-            </div>
+        <section class="contato">
 
-            <div class="footer-address">
+            <div class="row">
 
-                <h2>Atendimento</h2>
+                <aside class="aside-left">
 
+                    <section class="endereco">
 
-                <div class="footer-telefone mb-3">
-                    <div class="icon-footer">
-                        <ion-icon name="call-outline"></ion-icon>
-                    </div>
-                    <div class="texto">
-                        <span class="prefixo">+55 69</span> 99928-8756<br>
-                    </div>
-                </div>
-
-                <div class="footer-email mb-3">
-                    <div class="icon-footer">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </div>
-                    <div class="texto">
-                        comercial@factsenergia.eng.br
-                    </div>
-                </div>
-
-                <address>
-                    <div class="icon-footer">
-                        <ion-icon name="map-outline"></ion-icon>
-                    </div>
-                    <div class="texto">
+                        <h3>Facts Energia</h3>
                         <p>
                             Rua Bom Jesus, 212<br>
                             Sala 1904<br>
                             80035-010<br>
                             Juvevê - Curitiba/PR<br>
                         </p>
-                    </div>
-                </address>
-            </div>
-        </div>
-    </section>
 
-    <section class="copyright">
-        <p>Copyright © 2022 Facts Energia - Todos os direitos reservados</p>
-    </section>
-</footer>
+                        <div class="telefone">
+                            <p>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>+55 69 </span>99928-8756
+                            </p>
+                        </div>
+
+                    </section>
+
+                </aside>
+
+                <div class="form-contato">
+
+                    <div>
+                    </div>
+
+                    <form ref="form" id="form-contato" role="form" action="mailto:antunismos@gmail.com">
+
+                        <div class="form-group">
+                            <label>Nome:</label>
+                            <input id="nome" name="nome" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">e-mail:</label>
+                            <input id="email" name="email" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="form-group clearfix">
+                            <div class="row">
+                                <div class="input-telefone">
+                                    <label for="fone">Telefone:</label>
+                                    <input id="fone" name="inputFone" type="text" placeholder="Apenas números com DDD"
+                                        class="form-control" required>
+                                </div>
+                                <div class="input-telefone">
+                                    <label for="celular">Celular:</label>
+                                    <input id="celular" name="celular" type="text" placeholder="Apenas números com DDD"
+                                        class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group clearfix">
+                            <div class="row">
+                                <div class="input-cidade">
+                                    <label for="cidade">Cidade:</label>
+                                    <input id="cidade" name="cidade" type="text" class="form-control">
+                                </div>
+                                <div class="input-estado">
+                                    <label for="estado">Estado:</label>
+                                    <input id="estado" name="estado" type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto:</label>
+                            <input id="assunto" name="assunto" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <button type="button" id="sendBtn" value="Enviar Mensagem" class="btn btn-secundario">
+                                Enviar Mensagem
+                            </button>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="row">
+                <div class="footer-logo">
+                    <img id="logo" src="./img/facts_footer.png" alt="Facts Energia">
+                    <a href="" id="back-to-top" onclick="topFunction()">Voltar ao topo</a>
+                </div>
+
+                <div class="footer-address">
+
+                    <h2>Atendimento</h2>
+
+
+                    <div class="footer-telefone mb-3">
+                        <div class="icon-footer">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="texto">
+                            <span class="prefixo">+55 69</span> 99928-8756<br>
+                        </div>
+                    </div>
+
+                    <div class="footer-email mb-3">
+                        <div class="icon-footer">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="texto">
+                            comercial@factsenergia.eng.br
+                        </div>
+                    </div>
+
+                    <address>
+                        <div class="icon-footer">
+                            <ion-icon name="map-outline"></ion-icon>
+                        </div>
+                        <div class="texto">
+                            <p>
+                                Rua Bom Jesus, 212<br>
+                                Sala 1904<br>
+                                80035-010<br>
+                                Juvevê - Curitiba/PR<br>
+                            </p>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright">
+            <p>Copyright © 2022 Facts Energia - Todos os direitos reservados</p>
+        </section>
+    </footer>
 </body>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-AOS.init();
+    AOS.init();
 </script>
 
 <script>
 
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+    $(document).ready(function () {
+        $('#sendBtn').click(function () {
+            $('#form-contato').attr('action',
+                'mailto:antunismos@gmail.com?subject=' +
+                $('#assunto').val() + '&body=' + $('#mensagem').val());
+            $('#form-contato').submit();
+        });
+    });
+
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
 
 </script>

@@ -10,29 +10,65 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <header>
-
         <div class="bkg-header-info">
             <div class="header-info">
                 <ul class="languages">
-                    <li><a href="index.html" role="button" class="active"><span class="fi fi-br"></span></a><span>|</span></li>
-                    <li><a role="button"><span class="fi fi-us"></span></a></li>
+                    <li><a href="index.html"role="button"><span class="fi fi-br"></span></a><span>|</span></li>
+                    <li><a role="button" class="active"><span class="fi fi-us"></span></a></li>
                 </ul>
             </div>
         </div>
         <div class="header">
-            <div class="row">
+
+            <div class="row mobile-menu">
 
                 <div class="header-left">
+
+                    <!-- Mobile Menu -->
+                    <input type="checkbox" id="hamburger-input" class="burguer-shower" />
+                    
+
+                    <label id="hamburger-menu" for="hamburger-input">
+                        <nav class="navbar navbar-expand" id="sidebar-menu">
+                            <ul class="navbar-nav mr-auto" id="menu-principal">
+                                <ul class="languages-mobile">
+                                    <li><a role="button" class="active"><span class="fi fi-br"></span></a></li>
+                                    <li><a href="home_en.html" role="button"><span class="fi fi-us"></span></a></li>
+                                </ul>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./onde_atuamos.html">Where we operate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./knowhow.html">Know How</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./obras.html">Our works</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pe-0" href="./contactus.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </label>
+                    <label for="hamburger-input" class="overlay" id="overlay"></label>
                     <a href="#">
                         <img id="logo" src="./img/Facts Energia Brainstorm.png" alt="Facts Energia">
                     </a>
                 </div>
 
                 <div class="header-right">
+                    <!-- Desktop Menu -->
                     <nav class="navbar navbar-expand" id="main_navbar">
                         <ul class="navbar-nav mr-auto" id="menu-principal">
                             <li class="nav-item active">
@@ -48,17 +84,15 @@
                                 <a class="nav-link" href="./knowhow.html">Know How</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./obras.html">Works</a>
+                                <a class="nav-link" href="./obras.html">Our works</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link pe-0" href="./contactus.html">Contact us</a>
                             </li>
                         </ul>
-
                     </nav>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -69,75 +103,91 @@
     <main class="home">
 
         <section class="titulo-home">
-            <h1>Discover our Solutions</h1>
+            <h1>Conheça as nossas soluções</h1>
         </section>
 
         <section class="nossas-solucoes">
-            <div class="item">
-                <div class="bkg aos-init aos-animate" data-aos="zoom-in">
-                    <div class="header">
-                        <div class="icon">
-                            <ion-icon name="cog-outline" style="font-size: 72px;"></ion-icon>
+            <div class="double">
+                <div class="item">
+                    <div class="bkg aos-init aos-animate" data-aos="zoom-in">
+                        <div class="header">
+                            <div class="icon">
+                                <ion-icon name="cog-outline" style="font-size: 88px;"></ion-icon>
+                            </div>
+                            <div class="titulo">
+                                <h2>Engenharia do Proprietário</h2>
+                            </div>
                         </div>
-                        <div class="titulo">
-                            <h2>Engenharia do Proprietário</h2>
+                        <div>
+                            <p>Coordenação, suporte técnico, análise de projetos e fiscalização para seu projeto</p>
                         </div>
-                    </div>
-                    <div>
-                        <p>Atividades de aprovação e fiscalização dos empreendimentos com a finalidade de garantir
-                            as entregas conforme os padrões e os modelos esperados pelo cliente.</p>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="bkg aos-init aos-animate" data-aos="zoom-in">
-                    <div class="header">
-                        <div class="icon">
-                            <ion-icon name="cog-outline" style="font-size: 72px;"></ion-icon>
+                <div class="item">
+                    <div class="bkg aos-init aos-animate" data-aos="zoom-in">
+                        <div class="header">
+                            <div class="icon">
+                                <ion-icon name="cog-outline" style="font-size: 88px;"></ion-icon>
+                            </div>
+                            <div class="titulo">
+                                <h2>Serviço de Gerenciamento Obras e projeto</h2>
+                            </div>
                         </div>
-                        <div class="titulo">
-                            <h2>Comissionamento de Sistemas Elétricos </h2>
+                        <div>
+                            <p>Gerenciamento e Coordenação para seu projeto</p>
                         </div>
-                    </div>
-                    <div>
-                        <p>Atividades de comissionamento dos empreendimentos através de testes/ensaios primários de
-                            equipamentos e secundários no sistema de SPCS.</p>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="bkg aos-init aos-animate" data-aos="zoom-in">
-                    <div class="header">
-                        <div class="icon">
-                            <ion-icon name="cog-outline" style="font-size: 72px;"></ion-icon>
+                <div class="item">
+                    <div class="bkg aos-init aos-animate" data-aos="zoom-in">
+                        <div class="header">
+                            <div class="icon">
+                                <ion-icon name="cog-outline" style="font-size: 88px;"></ion-icon>
+                            </div>
+                            <div class="titulo">
+                                <h2>Gerenciamento e Coordenação para seu projeto</h2>
+                            </div>
                         </div>
-                        <div class="titulo">
-                            <h2>Treinamentos em proteção e controle</h2>
+                        <div>
+                            <p>Nosso time de engenheiros tem experiencia com os mais variados sistemas elétricos</p>
                         </div>
                     </div>
-                    <div>
-                        <p>A Apta fornece treinamentos de capacitação nas áreas de proteção e controle, com
-                            materiais didáticos adaptáveis ao cenário do cliente.</p>
+                </div>
+                <div class="item">
+                    <div class="bkg aos-init aos-animate" data-aos="zoom-in">
+                        <div class="header">
+                            <div class="icon">
+                                <ion-icon name="cog-outline" style="font-size: 88px;"></ion-icon>
+                            </div>
+                            <div class="titulo">
+                                <h2>Comissionamento de Sistemas Proteção, Controle e Supervisão</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Nosso time de engenheiros tem experiencia com os mais variados Sistemas de Proteção,
+                                Controle e Supervisão</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="solucoes"
-            style="background-color: #F3CA30; background-repeat: no-repeat; background-position: 0 0;">
+            style="background-color: #EDAB47; background-image: url(./img/solution.png); background-position: 0 0; background-repeat: no-repeat;">
             <div class="solucao">
                 <div class="texto">
-                    <div class="pe-5">
-                        <h2>Soluções práticas e completas de engenharia.</h2>
-                        <p>A empresa dispõe de uma equipe especializada em sistemas de Proteção, Controle e Supervisão
-                            de Subestações de Energia em todos os níveis de tensão para atividades como:</p>
-                        <p>- Estudos de Coordenação e Seletividade;</p>
-                        <p>- Análise de Projetos;</p>
-                        <p>- Parametrização de IEDs de Proteção e Controle;</p>
-                        <p>- Testes de Aceitação em Fábrica e Campo (TAF e TAC);</p>
-                        <p>- Treinamentos e desenvolvimento profissional;</p>
-                        <p>- Gerenciamento de obras.</p>
-                    </div>
+                    <h2>Soluções práticas e completas de engenharia.</h2>
+                    <p>A empresa dispõe de uma equipe especializada em Gerenciamento, Coordenação, sistemas elétrico
+                        e sistemas de Proteção, Controle e Supervisão de Subestações de Energia em todos os níveis
+                        de tensão para atividades como:</p>
+                    <p>- Estudos de Coordenação e Seletividade;</p>
+                    <p>- Gerenciamento e coordenação de obras;</p>
+                    <p>- Gerenciamento e coordenação de projetos;</p>
+                    <p>- Análise de Projetos;</p>
+                    <p>- Parametrização de IEDs de Proteção e Controle;</p>
+                    <p>- Testes de Aceitação em Fábrica e Campo (TAF e TAC);</p>
+                    <p>- Treinamentos e desenvolvimento profissional;</p>
+                    <p>- Execução de serviços de campo.</p>
                 </div>
             </div>
         </section>
@@ -145,69 +195,44 @@
         <section class="parceiros">
             <div class="content">
                 <div class="titulo">
-                    <img src="" alt="Clientes e Parceiros">
                     <h2>Clientes e Parceiros</h2>
                 </div>
                 <div class="logos row">
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust1.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust2.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust3.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust4.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust5.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust6.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust7.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust8.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust9.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust10.png" alt="Clientes">
                     </div>
                     <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                        <img src="./img/cust11.png" alt="Clientes">
                     </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
-                    </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
-                    </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
-                    </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
-                    </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
-                    </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
-                    </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
-                    </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
-                    </div>
-                    <div class="logo aos-init" data-aos="flip-right">
-                        <img src="" alt="Clientes e Parceiros">
+                    <div class="logo aos-init" data-aos="flip-right" style="margin-top: 1.5em;">
+                        <img src="./img/cust12.jpg" alt="Clientes">
                     </div>
                 </div>
             </div>
@@ -215,16 +240,12 @@
 
     </main>
 
-    <!-- ESTE FOOTER DEVE SER AJUSTADO -->
     <footer>
         <section class="footer">
             <div class="row">
                 <div class="footer-logo">
-                    <h1 class="title">Facts Energia</h1>
-                </div>
-
-                <div class="acesso-rapido">
-                    <a href="#" onclick="topFunction()" style="text-decoration: none; color: #fff;">Voltar ao topo</a>
+                    <img id="logo" src="./img/facts_footer.png" alt="Facts Energia">
+                    <a href="" id="back-to-top" onclick="topFunction()">Voltar ao topo</a>
                 </div>
 
                 <div class="footer-address">
@@ -233,59 +254,50 @@
 
 
                     <div class="footer-telefone mb-3">
-                        <div class="img">
-                            <img src="img/call.svg" alt="Telefone" class="me-2" width="25">
+                        <div class="icon-footer">
+                            <ion-icon name="call-outline"></ion-icon>
                         </div>
                         <div class="texto">
-                            <span class="prefixo">+55 11</span> 98207-9414<br> <span class="prefixo">+55 11</span>
-                            98106-0984<br>
+                            <span class="prefixo">+55 69</span> 99928-8756<br>
                         </div>
                     </div>
 
                     <div class="footer-email mb-3">
-                        <div class="img">
-                            <i class="bi bi-envelope-fill"></i>
+                        <div class="icon-footer">
+                            <ion-icon name="mail-outline"></ion-icon>
                         </div>
                         <div class="texto">
-                            adm@apta.eng.br
+                            comercial@factsenergia.eng.br
                         </div>
                     </div>
 
                     <address>
-                        <div class="img">
-                            <i class="bi bi-pin-map"></i>
+                        <div class="icon-footer">
+                            <ion-icon name="map-outline"></ion-icon>
                         </div>
                         <div class="texto">
                             <p>
-                                Rua União, 452<br>
-                                Torre B - Apto 188<br>
-                                Parque União<br>
-                                CEP: 13206-650<br>
-                                Jundiaí - SP
+                                Rua Bom Jesus, 212<br>
+                                Sala 1904<br>
+                                80035-010<br>
+                                Juvevê - Curitiba/PR<br>
                             </p>
                         </div>
                     </address>
-
                 </div>
-
-
             </div>
-
         </section>
 
-        <section class="direciona">
+        <section class="copyright">
             <p>Copyright © 2022 Facts Energia - Todos os direitos reservados</p>
-            <a href="http://www.direciona.com.br/" target="_blank"><img src=""
-                    alt="Direciona Websites - http://www.direciona.com.br"
-                    title="Direciona Websites - http://www.direciona.com.br"></a>
         </section>
-
-        <a href="https://wa.me/5521COMPANYNUMBER" style="display:flex;justify-content:center;align-items:center;position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
-      z-index:1000;" target="_blank">
-            <i class="bi bi-whatsapp"></i>
-        </a>
     </footer>
 </body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 <script>
 
